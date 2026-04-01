@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Types - Hotel Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Hotel Booking</h1>
+      <nav aria-label="Primary navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Room types and booking</h2>
+      <p>Browse our available rooms and book directly from the table below.</p>
+      <div class="search-panel">
+        <label for="room-search">Search room type</label>
+        <input id="room-search" type="search" placeholder="Search Standard, Deluxe, Suite..." aria-label="Search room type">
+        <button id="search-button" type="button">Search</button>
+      </div>
+      <div class="table-wrapper">
+        <table aria-describedby="room-table-description">
+          <caption id="room-table-description">Available room categories with details and booking links.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Room Type</th>
+              <th scope="col">Capacity</th>
+              <th scope="col">Price per Night</th>
+              <th scope="col">Amenities</th>
+              <th scope="col">Book</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Standard</td>
+              <td>2 guests</td>
+              <td>$120</td>
+              <td>Wi-Fi, Breakfast, Workspace</td>
+              <td><a class="cta-link" href="booking.html?room=Standard">Book now</a></td>
+            </tr>
+            <tr>
+              <td>Deluxe</td>
+              <td>3 guests</td>
+              <td>$180</td>
+              <td>City view, Mini bar, Premium bedding</td>
+              <td><a class="cta-link" href="booking.html?room=Deluxe">Book now</a></td>
+            </tr>
+            <tr>
+              <td>Executive</td>
+              <td>4 guests</td>
+              <td>$240</td>
+              <td>Lounge access, Desk, Luxury bathroom</td>
+              <td><a class="cta-link" href="booking.html?room=Executive">Book now</a></td>
+            </tr>
+            <tr>
+              <td>Suite</td>
+              <td>4 guests</td>
+              <td>$320</td>
+              <td>Living area, Balcony, VIP service</td>
+              <td><a class="cta-link" href="booking.html?room=Suite">Book now</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

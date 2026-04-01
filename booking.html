@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Room - Hotel Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Hotel Booking</h1>
+      <nav aria-label="Primary navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container booking-page">
+    <section>
+      <h2>Book your stay</h2>
+      <p>Complete the form below to request a room reservation.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Guest and stay details</legend>
+          <label for="guest-name">Full name</label>
+          <input id="guest-name" name="guest-name" type="text" required>
+
+          <label for="guest-email">Email address</label>
+          <input id="guest-email" name="guest-email" type="email" required>
+
+          <label for="room-type">Room type</label>
+          <select id="room-type" name="room-type" required>
+            <option value="Standard">Standard</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Executive">Executive</option>
+            <option value="Suite">Suite</option>
+          </select>
+
+          <label for="check-in">Check-in date</label>
+          <input id="check-in" name="check-in" type="date" required>
+
+          <label for="check-out">Check-out date</label>
+          <input id="check-out" name="check-out" type="date" required>
+
+          <label for="guest-count">Number of guests</label>
+          <input id="guest-count" name="guest-count" type="number" min="1" max="6" value="1" required>
+        </fieldset>
+
+        <button class="submit-button" type="submit">Submit booking request</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
